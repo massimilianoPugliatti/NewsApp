@@ -12,10 +12,8 @@ class SearchNewsUseCase @Inject constructor(
             repository.searchNews(query)
             Result.success(Unit)
         } catch (e: NewsError) {
-            Log.e("Error","$e.message")
             Result.failure(e)
         } catch (e: Exception) {
-            Log.e("Error","$e.message")
             Result.failure(NewsError.UnknownError())
         }
     }
