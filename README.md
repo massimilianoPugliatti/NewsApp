@@ -11,6 +11,7 @@ Per far funzionare l'applicazione, è necessario ottenere una API Key gratuita:
 3. Inserisci la chiave nel file `local.properties` del progetto come:
    `NEWS_API_KEY=inserisci_la_tua_chiave_qui`
    Il progetto è configurato per leggere questa proprietà tramite BuildConfig.
+4. Avvia l'app.
 
 ## Scelte Architetturali
 
@@ -60,7 +61,7 @@ Se avessi avuto più tempo avrei implementato/perfezionato i seguenti punti:
 com.example.newsapp
 ├── core/                # Networking, Database, DI modules, Navigation
 ├── feature/news/
-│   ├── data/            # Repository impl, DataSources (Local/Remote), Mappers
+│   ├── data/            # Repository impl, DataSources (Local/Remote)
 │   ├── domain/          # Model, Repository Interface, Use Cases
 │   └── presentation/    # ViewModels, UI Screens, Compose Components
 ```
