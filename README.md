@@ -1,4 +1,4 @@
-# NewsApp - Android Case Study
+# NewsReader
 
 Questa applicazione Android permette di consultare le ultime notizie tramite l'integrazione con le [NewsAPI](https://newsapi.org/), gestire una lista di preferiti locale e visualizzare i dettagli completi di ogni articolo.
 
