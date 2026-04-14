@@ -27,15 +27,12 @@ class NewsRepositoryImpl(
             localDataSource.insertArticles(response)
 
         } catch (e: java.io.IOException) {
-            Log.e("Error","$e.message")
             throw NewsError.NetworkError()
         } catch (e: retrofit2.HttpException) {
-            Log.e("Error","$e.message")
             throw NewsError.ServerError()
         } catch (e: NewsError) {
             throw e
         } catch (e: Exception) {
-            Log.e("Error","$e.message")
             throw NewsError.UnknownError()
         }
     }
