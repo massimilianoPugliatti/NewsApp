@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.example.newsapp.R
 import com.example.newsapp.feature.news.domain.model.Article
+import java.time.format.DateTimeFormatter
 
 @Composable
 fun ArticleDetailContent(article: Article, onFavoriteToggle: () -> Unit) {
@@ -74,7 +75,7 @@ fun ArticleDetailContent(article: Article, onFavoriteToggle: () -> Unit) {
             Text(text = article.title, style = MaterialTheme.typography.headlineSmall)
 
             Text(
-                text = "Pubblicato il: ${article.publishedAt}", // Qui puoi aggiungere un formatter
+                text = "Pubblicato il: ${article.publishedAt.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))}",
                 style = MaterialTheme.typography.bodySmall,
                 modifier = Modifier.padding(vertical = 8.dp)
             )
