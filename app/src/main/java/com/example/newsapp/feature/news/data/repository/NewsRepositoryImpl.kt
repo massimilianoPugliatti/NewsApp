@@ -1,6 +1,5 @@
 package com.example.newsapp.feature.news.data.repository
 
-import android.util.Log
 import com.example.newsapp.feature.news.data.repository.local.LocalDataSource
 import com.example.newsapp.feature.news.data.repository.remote.RemoteDataSource
 import com.example.newsapp.feature.news.domain.model.Article
