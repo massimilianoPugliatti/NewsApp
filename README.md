@@ -1,4 +1,4 @@
-# NewsReader
+# NewsApp
 
 Questa applicazione Android permette di consultare le ultime notizie tramite l'integrazione con le [NewsAPI](https://newsapi.org/), gestire una lista di preferiti locale e visualizzare i dettagli completi di ogni articolo.
 
@@ -46,7 +46,6 @@ Esempio di esecuzione:
 
 ## Evoluzioni Future
 
-Se avessi avuto più tempo avrei implementato/perfezionato i seguenti punti:
 1. **Condivisione e Apertura Browser:** permettere all'utente di condividere l'articolo con altre app o di aprirlo nel browser di sistema per leggere il contenuto originale completo.
 2. **Schermata dedicata ai Preferiti:** Implementazione di una sezione separata per visualizzare esclusivamente gli articoli salvati dall'utente, magari tramite bottom bar.
 3. **Logica di svuotamento cache:** Implementazione di una funzione per eliminare automaticamente gli articoli più vecchi o non contrassegnati come preferiti per ottimizzare lo storage.
